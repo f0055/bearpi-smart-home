@@ -1,0 +1,37 @@
+import("//build/lite/config/component/lite_component.gni")
+
+static_library("smart_light") {
+    sources = [
+        "src/main.c",
+        "src/led.c",
+        "src/servo.c",
+        "src/pir.c",
+        "src/door.c",
+        "src/button.c",
+        "src/sht30.c",
+        "src/wifi.c",
+        "src/udp_server.c",
+        "src/aes.c",
+        "src/md5.c",
+        "src/msmart.c",
+        "src/scene.c",
+        "src/schedule.c",
+        "src/state.c",
+        "src/auto_lock.c",
+    ]
+
+    include_dirs = [
+        "src",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+        "//foundation/communication/frameworks/wifi_lite/interfaces/wifi",
+        "//foundation/communication/interfaces/kits/wifi_lite/wifiservice",
+        "//third_party/cJSON",
+        "//vendor/hisi/hi3861/hi3861/third_party/lwip_sack/include",
+    ]
+
+    defines = [
+        "WITH_LWIP",
+    ]
+}

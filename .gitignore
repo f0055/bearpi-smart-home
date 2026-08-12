@@ -1,0 +1,24 @@
+# Build output
+out/
+*.o
+*.a
+*.bin
+*.map
+
+# IDE
+.vscode/
+.idea/
+
+# OpenHarmony SDK (don't track in this repo)
+vendor/
+third_party/
+kernel/
+base/
+build/
+test/
+foundation/
+ohos_bundles/
+
+# OS files
+.DS_Store
+Thumbs.db
