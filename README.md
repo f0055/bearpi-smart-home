@@ -1,5 +1,7 @@
 # BearPi-HM_Nano 智能家居系统
 
+> **新手？** 请先阅读 [快速开始指南](QUICKSTART.md)，克隆项目后按步骤操作即可运行固件端和App端。
+
 基于 OpenHarmony + BearPi-HM_Nano (Hi3861) 的国产全栈智能家居系统，通过局域网 UDP 协议实现手机 App 对门禁、照明、温湿度、空调、场景的统一控制。
 
 ## 功能特性
