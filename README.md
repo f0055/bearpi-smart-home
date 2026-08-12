@@ -15,27 +15,27 @@
 
 ## 硬件清单
 
-| 组件 | 型号 | GPIO |
-|------|------|------|
-| 开发板 | BearPi-HM_Nano (Hi3861) | - |
-| PIR 传感器 | HW-870 反射式红外 | GPIO_6 |
-| 门磁传感器 | 槽型红外传感器 | GPIO_9 |
-| 舵机 | SG90 360° 连续旋转 | GPIO_13 |
-| LED | 带限流电阻 LED 模块 | GPIO_2 (PWM) |
-| 温湿度 | SHT30 | GPIO_0/1 (I2C) |
-| 按键 | F1/F2 | GPIO_11/12 |
+| 组件       | 型号                    | GPIO           |
+| ---------- | ----------------------- | -------------- |
+| 开发板     | BearPi-HM_Nano (Hi3861) | -              |
+| PIR 传感器 | HW-870 反射式红外传感器 | GPIO_6         |
+| 门磁传感器 | FC-33对射式红外传感器   | GPIO_9         |
+| 舵机       | SG90 360° 连续旋转     | GPIO_13        |
+| LED        | 带限流电阻 LED 模块     | GPIO_2 (PWM)   |
+| 温湿度     | SHT30                   | GPIO_0/1 (I2C) |
+| 按键       | F1/F2                   | GPIO_11/12     |
 
 ## GPIO 接线表
 
 ```
 GPIO_0  ──── SHT30 SDA
 GPIO_1  ──── SHT30 SCL
-GPIO_2  ──── LED (+ 限流电阻)
-GPIO_6  ──── PIR 传感器 OUT
-GPIO_9  ──── 槽型传感器 OUT
-GPIO_11 ──── F1 按键 (接 GND)
-GPIO_12 ──── F2 按键 (接 GND)
-GPIO_13 ──── SG90 舵机信号线 (橙)
+GPIO_2  ──── LED(+限流电阻)
+GPIO_6  ──── HW-870传感器 OUT
+GPIO_9  ──── FC-33传感器 OUT
+GPIO_11 ──── F1按键(接GND)
+GPIO_12 ──── F2按键(接GND)
+GPIO_13 ──── SG90舵机信号线(橙)
 ```
 
 ## 编译方法
@@ -89,7 +89,3 @@ python tools/test_discover.py
 # 监听广播
 python tools/listen_broadcast.py
 ```
-
-## 许可证
-
-MIT License
